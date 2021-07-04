@@ -1,0 +1,815 @@
+/*css reset*/
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+/*main*/
+
+body {
+	background-color: #ffff;
+}
+
+.wrapper{
+	position: relative;
+	z-index: 25;
+	text-align: center;
+	width: 1600px;
+	/* outline:  1px solid rgb(0, 30, 255); */
+	margin:  0 auto;
+}
+
+/*header*/
+
+.header {
+	position: relative;
+	background: #091215 url('img/header_background.png') no-repeat 50% 0;
+	background-size:cover;
+	height: 670px;
+}
+
+header::before {
+	content: "";
+	position: absolute;
+	background-color: rgba(0, 0, 0, .5);
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+
+.header-conteiner {
+	position: relative;
+	z-index: 25;
+	text-align: center;
+	width: 1600px;
+	margin:  0 auto;
+}
+
+.header-conteiner .logo {
+
+	color: white;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 36px;
+	padding: 10px 170px 0px 215px;
+	display: inline-block;
+}
+
+.logo-block-menu {
+	text-align: center;
+	margin-bottom: 102px;
+}
+
+.menu-block {
+	display: inline-block;
+	padding: 60px 225px 0px 180px;
+}
+
+.header-conteiner .menu-block ul li {
+	font-size: 18px;
+	text-decoration: none;
+	display: inline-block;
+	border-bottom: solid 2px transparent;
+	transition: border .4s linear;
+}
+
+.header-conteiner .menu-block ul li a{
+	font-family: 'Nunito Sans', sans-serif;
+	color: white;
+	text-decoration: none;
+	padding: 20px 20px 10px 20px;
+	display: block;
+	text-align: center;
+}
+
+.header-conteiner .menu-block li:hover {
+	border-bottom: solid 2px white;
+}
+
+.header-conteiner .header-text h1 {
+	font-family: 'Nunito', sans-serif;
+	color: white;
+	font-size: 48px;
+	text-align: center;
+	padding-bottom: 15px;
+	
+}
+
+sup {
+	vertical-align: 10px;
+	font-size: 26px;
+}
+
+.header-text {
+	margin-bottom: 45px;
+}
+
+.header-conteiner .header-text h2 {
+	font-family: 'Nunito', sans-serif;
+	color: white;
+	font-size: 40px;
+	padding-bottom: 48px;
+	text-align: center;
+}
+
+.header-conteiner .header-text p{
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	font-family: 'Nunito', sans-serif;
+}
+
+.header-conteiner .header-text p+p {
+	padding-bottom: 42px;
+	padding-top: 20px;
+}
+
+.header-btn {
+	font-family: 'Nunito', sans-serif;
+	color: white;
+	border: solid 2px white;
+	font-size: 14px;
+	display: inline-block;
+	width: 155px;
+	padding: 12px 0;
+	margin: 0 15px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.header-btn:hover {
+	background: white;
+	color: black;
+}
+
+.header-scroll {
+	position: relative;
+	border-right: solid 5px white;
+	border-bottom: solid 5px white;
+	width: 25px;
+	height: 25px;
+	bottom: -55px;
+	transform: rotate(45deg);
+	z-index: 25;
+	display: inline-block;
+}
+
+
+/* inside-baget */
+
+
+.inside-baget {
+	position: relative;
+	background: #efefef url('img/baget_background.png') no-repeat 50% 0;
+	background-size:cover;
+	height: 650px;
+}
+
+.inside-baget::before {
+	content: "";
+	position: absolute;
+	background-color: rgba(255, 252, 252, 0.5);
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+}
+
+.inside-baget-text {
+	position: relative;
+	z-index: 25;
+	left:50%;
+	transform:translate(-50%);
+	margin-bottom: 30px;
+}
+
+.inside-baget-text h2 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 32px;
+	color: black;
+	padding-top: 50px;
+}
+
+.inside-baget-text p {
+	font-size: 14px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	padding: 10px 0;
+}
+
+.inside-baget-image {
+	position: relative;
+	z-index: 25;
+	background: url('img/Wave_icon.png') no-repeat top;
+	padding-top: 10px;
+}
+
+.inside-bage-scroll {
+	position: relative;
+	border-right: solid 5px black;
+	border-bottom: solid 5px black;
+	width: 25px;
+	height: 25px;
+	transform: rotate(45deg);
+	z-index: 25;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+
+/* Whole wheat bread line */
+
+
+.bread_line {
+	position: relative;
+	background: #ffffff;
+	background-size:cover;
+	height: 670px;
+}
+
+.bread_line h2 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 32px;
+	color: black;
+	padding-top: 50px;
+}
+
+.price {
+	width: 160px;
+	height: 265px;
+	box-shadow: #f8f8f8 0px 5px 4px 1px;
+	display: inline-block;
+	margin: 15px;
+	
+	position: relative;
+	z-index: 25;
+}
+
+.price.w-w-round {
+	background: url('img/W_W_Round.png') no-repeat top;
+	background-position: 29px 25px;
+}
+
+.price.w-w-square {
+	background: url('img/W_W_square.png') no-repeat top;
+	background-position: 28px 25px;
+}
+
+.price.w-w-multigrain {
+	background: url('img/W_W_multigrain.png') no-repeat top;
+	background-position: 28px 25px;
+}
+
+.price.b-r-square {
+	background: url('img/Breakfast_Raisin_Square.png') no-repeat top;
+	background-position: 23px 25px;
+}
+
+.price p {
+	font-size: 14px;
+	font-family: 'Nunito', sans-serif;
+	padding-top: 155px;
+}
+
+.price p+p {
+	padding-top: 5px;
+}
+
+.price p+p+p {
+	padding-top: 15px;
+	font-size: 10px;
+}
+
+.price p+p+p+p {
+	padding-top: 20px;
+	font-size: 16px;
+}
+
+.bread_line.wrapper p {
+	font-size: 14px;
+	font-family: 'Nunito', sans-serif;
+	padding-top: 15px;
+}
+.bread-line-text {
+	padding-bottom: 20px;
+	margin-top: 45px;
+}
+
+.bread_line .bread-line-text p+p {
+	padding-top: 12px;
+}
+
+.bread_line-scroll-left {
+	position: relative;
+	border-right: solid 4px black;
+	border-bottom: solid 4px black;
+	width: 18px;
+	height: 18px;
+	transform: rotate(135deg);
+	z-index: 25;
+	display: inline-block;
+	margin-bottom: 90px;
+}
+
+.bread_line-scroll-right {
+	position: relative;
+	border-right: solid 4px black;
+	border-bottom: solid 4px black;
+	width: 18px;
+	height: 18px;
+	transform: rotate(-45deg);
+	z-index: 25;
+	display: inline-block;
+	margin-bottom: 90px;
+}
+
+.bread_line-scroll-page {
+	margin: 35px 0;
+}
+
+.bread_line-scroll-page li {
+	display: inline-block;
+}
+
+.b_l-s-point {
+	position: relative;
+	border: solid 3px black;
+	border-radius: 100%;
+	width: 0px;
+	height: 0px;
+	/* z-index: 25; */
+	display: inline-block;
+}
+
+.btn-bread-line {
+	padding-bottom: 70px;
+    padding-top: 20px;
+}
+
+.in-btn-b-l {
+	font-family: 'Nunito', sans-serif;
+	color: rgb(0, 0, 0);
+	border: solid 2px rgb(0, 0, 0);
+	font-size: 14px;
+	display: inline-block;
+	width: 155px;
+	padding: 12px 0;
+	margin: 0 15px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.in-btn-b-l:hover {
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+/* where-to-buy */
+
+.where-to-buy {
+	position: relative;
+	background: #091215 url('img/where-to-buy_backgraund.png') no-repeat 50% 0;
+	background-size:cover;
+	height: 527px;
+}
+
+.where-to-buy::before {
+	content: "";
+	position: absolute;
+	background-color: rgba(0, 0, 0, .5);
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+
+.where-to-buy h2 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 32px;
+	color: white;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.where-to-buy p {
+	color: white;
+	padding-bottom: 14px;
+}
+
+.where-to-buy .wrapper {
+	position: relative;
+	z-index: 25;
+	background: url(img/Wave\ icon\ копия.png) no-repeat center;
+	background-position: 50% 45%;
+}
+
+.where-to-buy-company {
+	text-align: center;
+	margin-top: 75px;
+}
+
+.where-to-buy .wrapper div.where-to-buy-company+div.where-to-buy-company {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.winndixie,
+.walmart,
+.walgreens,
+.publix, 
+.miijer,
+.fredmeyer,
+.wholefoodsmarket,
+.safeway {
+	display: inline-block;
+	align-content: center;
+	width: 170px;
+	height: 65px;
+	margin: 0 10px;
+}
+
+.winndixie {
+	background: url(img/Winn\ D.png) no-repeat center;
+}
+
+.walmart  {
+	background: url(img/Walmart.png) no-repeat center;
+}
+
+.walgreens {
+	background: url(img/Walgreens.png) no-repeat center;
+}
+
+.publix {
+	background: url(img/Publix.png) no-repeat center;
+}
+
+.miijer {
+	background: url(img/Meijer.png) no-repeat center;
+}
+.fredmeyer {
+	background: url(img/Fred\ Meyer.png) no-repeat center;
+}
+.wholefoodsmarket {
+	background: url(img/Whole\ F.png) no-repeat center;
+}
+.safeway {
+	background: url(img/Safeway.png) no-repeat center;
+}
+
+.where-to-buy-scroll {
+	position: relative;
+	border-right: solid 5px white;
+	border-bottom: solid 5px white;
+	width: 25px;
+	height: 25px;
+	transform: rotate(45deg);
+	z-index: 25;
+	display: inline-block;
+}
+
+/* fact-about-BakeryBo */
+
+.fact-about-BakeryBo {
+	background-color: #ffffff;
+	height: 475px;
+	position: relative;
+}
+
+.fact-about-BakeryBo h2 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 32px;
+	color: black;
+	padding-top: 77px;
+	padding-bottom: 23px;
+}
+
+.fact-about-organic,
+.fact-about-serving,
+.fact-about-supermarkets,
+.fact-about-products,
+.fact-about-recycable,
+.fact-about-baking {
+	display: inline-block;
+	background-color: #c52828;
+	width: 140px;
+	padding-top: 118px;
+	margin: 0 23px;
+}
+
+.fact-about-organic {
+	background: url(img/Seeds.png) no-repeat 40px 31px;
+}
+
+.fact-about-serving {
+	background: url(img/Calendar.png) no-repeat 40px 30px;
+}
+.fact-about-supermarkets {
+	background: url(img/Cart.png) no-repeat 40px 35px;
+}
+.fact-about-products{
+	background: url(img/Bread\ icon.png) no-repeat 40px 45px;
+}
+.fact-about-recycable {
+	background: url(img/Recycable.png) no-repeat 40px 32px;
+}
+.fact-about-baking {
+	background: url(img/Rolling\ spin\ icon.png) no-repeat 40px 30px;
+}
+
+.fact-about-BakeryBo .wrapper p+p {
+	padding-top: 16px;
+}
+
+.fact-about-BakeryBo-scroll {
+	position: relative;
+	border-right: solid 5px black;
+	border-bottom: solid 5px black;
+	width: 25px;
+	height: 25px;
+	transform: rotate(45deg);
+	z-index: 25;
+	display: inline-block;
+	top: 55px;
+}
+
+/* cupon */
+
+.cupon {
+	background-color: #f9f7f7;
+	height: 660px;
+	position: relative;
+	
+}
+
+.cupon .wrapper {
+	display: block;
+}
+
+.cupon-left {
+	display: inline-block;
+    width: 611px;
+    text-align: justify;
+    vertical-align: top;
+    padding-left: 240px;
+
+}
+
+.cupon-left h2 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 32px;
+	color: rgb(2, 2, 2);
+	padding-top: 80px;
+	padding-bottom: 35px;
+}
+
+.cupon-left p {
+	font-size: 14px;
+	font-family: 'Nunito', sans-serif;
+	padding-bottom: 10px;
+	line-height: 1.5
+}
+
+.cupon-left p+p {
+	padding-top: 10px;
+	line-height: 2.0;
+	padding-bottom: 0;
+}
+
+.cupon-left p+p+p {
+	padding-top: 5px;
+	
+}
+
+.cupon-left p+p+p+p {
+	padding-top: 21px;
+	line-height: 2.0;
+}
+
+.cupon-left p+p+p+p+p {
+	padding-top: 3px;
+	line-height: 2.0;
+}
+
+form {
+	padding-top: 35px;
+}
+
+.input {
+	background-color: #f9f7f7;
+	width: 335px;
+	height: 35px;
+	padding-left: 20px;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    border: 1px solid black;
+    position: absolute;
+    top: 9px;
+    left: 0;
+}
+
+input[type="checkbox"]:checked+label:before{
+	background: rgb(0, 0, 0);
+}
+
+input[type="checkbox"]:checked+label:after{
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 14px;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transform: rotate(30deg);
+	top: 9px;
+	left: 7px;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    padding: 5px 0 10px 35px;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.form-cupon p {
+	padding: 0;
+	line-height: 0;
+}
+
+.btn-cupon-left {
+	padding-bottom: 140px;
+}
+
+.in-btn-c-l {
+	font-family: 'Nunito', sans-serif;
+	color: rgb(0, 0, 0);
+	border: solid 2px rgb(0, 0, 0);
+	font-size: 14px;
+	display: inline-block;
+	width: 155px;
+	padding: 12px 0;
+	margin: 0 10px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.in-btn-c-l:hover {
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+.cupon-right {
+	display: inline-block;
+	width: 745px;
+	background: url(img/Coupon\ Image.png) no-repeat;
+	height: 580px;
+	background-position: 35px 80px;
+}
+
+/* footer */
+
+footer {
+	position: relative;
+	height: 234px;
+	background: url(img/footer-backgraund.png);
+	/* background-size:cover; */
+}
+
+footer .wrapper {
+	text-align: left;
+}
+
+.footer-logo {
+	display: inline-block;
+	color: white;
+	width: 760px;
+	text-align: left;
+	vertical-align: top;
+    padding-top: 60px;
+	padding-left: 240px;
+}
+
+.footer-logo h1 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 36px;
+	padding-bottom: 25px;
+}
+
+.footer-logo p {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footer-social {
+	display: inline-block;
+	color: white;
+	width: 190px;
+	text-align: left;
+	padding-top: 60px;
+    vertical-align: top;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 10px;
+	line-height: 2.0;
+}
+
+.footer-social-conteiner {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text-align: left;
+	font-size: 0;
+}
+
+.footer-social-conteiner {
+	list-style-type: none;
+	font-size: 20px;
+	}
+	
+.footer-social-conteiner li {
+	display: inline-block;
+}
+
+.footer-social-conteiner li a{
+		width: 35px;
+		height: 28px;
+		display: block;
+		background: url('img/footer-social.png') -10px -104px;
+}
+		
+.footer-social-conteiner li+li a{
+			background-position:  -10px -56px;
+}
+
+.footer-social-conteiner li+li+li a{
+			background-position:  -10px -10px;
+}
+
+.footer-contact {
+	display: inline-block;
+	color: white;
+	width: 250px;
+	text-align: left;
+	padding-top: 60px;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 10px;
+	line-height: 2.0;
+}
+
+.footer-contact  h3, .footer-social h3 {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+a.footer-tel-contact, a.contect-mail-contact {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
