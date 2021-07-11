@@ -47,15 +47,20 @@
 
 body {
 	background-color: #ffff;
+	min-width: 1140px
 }
 
 .wrapper{
 	position: relative;
 	z-index: 25;
 	text-align: center;
-	width: 1600px;
+	width: 1140px;
 	/* outline:  1px solid rgb(0, 30, 255); */
 	margin:  0 auto;
+}
+
+section {
+	background-size: 100%;
 }
 
 /*header*/
@@ -76,34 +81,32 @@ header::before {
 	z-index: 5;
 }
 
-.header-conteiner {
-	position: relative;
-	z-index: 25;
-	text-align: center;
-	width: 1600px;
-	margin:  0 auto;
-}
-
-.header-conteiner .logo {
+.header .logo {
 
 	color: white;
 	font-family: 'Kaushan Script', cursive;
 	font-size: 36px;
-	padding: 10px 170px 0px 215px;
-	display: inline-block;
+	padding: 65px 0px 0px 15px;
+	float: left;
 }
 
 .logo-block-menu {
-	text-align: center;
+	text-align: justify;
 	margin-bottom: 102px;
 }
 
-.menu-block {
-	display: inline-block;
-	padding: 60px 225px 0px 180px;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
-.header-conteiner .menu-block ul li {
+.menu-block {
+	padding: 60px 15px 0px 0px;
+	float: right;
+}
+
+.header .menu-block ul li {
 	font-size: 18px;
 	text-decoration: none;
 	display: inline-block;
@@ -111,7 +114,7 @@ header::before {
 	transition: border .4s linear;
 }
 
-.header-conteiner .menu-block ul li a{
+.header .menu-block ul li a{
 	font-family: 'Nunito Sans', sans-serif;
 	color: white;
 	text-decoration: none;
@@ -120,11 +123,11 @@ header::before {
 	text-align: center;
 }
 
-.header-conteiner .menu-block li:hover {
+.header .menu-block li:hover {
 	border-bottom: solid 2px white;
 }
 
-.header-conteiner .header-text h1 {
+.header .header-text h1 {
 	font-family: 'Nunito', sans-serif;
 	color: white;
 	font-size: 48px;
@@ -142,7 +145,7 @@ sup {
 	margin-bottom: 45px;
 }
 
-.header-conteiner .header-text h2 {
+.header .header-text h2 {
 	font-family: 'Nunito', sans-serif;
 	color: white;
 	font-size: 40px;
@@ -150,14 +153,14 @@ sup {
 	text-align: center;
 }
 
-.header-conteiner .header-text p{
+.header .header-text p{
 	text-align: center;
 	color: white;
 	font-size: 18px;
 	font-family: 'Nunito', sans-serif;
 }
 
-.header-conteiner .header-text p+p {
+.header .header-text p+p {
 	padding-bottom: 42px;
 	padding-top: 20px;
 }
@@ -216,8 +219,6 @@ sup {
 .inside-baget-text {
 	position: relative;
 	z-index: 25;
-	left:50%;
-	transform:translate(-50%);
 	margin-bottom: 30px;
 }
 
@@ -586,11 +587,9 @@ sup {
 
 .cupon-left {
 	display: inline-block;
-    width: 611px;
+    width: 575px;
     text-align: justify;
     vertical-align: top;
-    padding-left: 240px;
-
 }
 
 .cupon-left h2 {
@@ -707,7 +706,7 @@ input[type="checkbox"] {
 
 .cupon-right {
 	display: inline-block;
-	width: 745px;
+	width: 500px;
 	background: url(img/Coupon\ Image.png) no-repeat;
 	height: 580px;
 	background-position: 35px 80px;
@@ -733,7 +732,7 @@ footer .wrapper {
 	text-align: left;
 	vertical-align: top;
     padding-top: 60px;
-	padding-left: 240px;
+	padding-left: 20px;
 }
 
 .footer-logo h1 {
@@ -794,7 +793,7 @@ footer .wrapper {
 .footer-contact {
 	display: inline-block;
 	color: white;
-	width: 250px;
+	width: 120px;
 	text-align: left;
 	padding-top: 60px;
 	font-size: 14px;
@@ -813,3 +812,4 @@ a.footer-tel-contact, a.contect-mail-contact {
 	text-decoration: none;
 	color: white;
 }
+
